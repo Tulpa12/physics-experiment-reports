@@ -1,0 +1,93 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{fancyhdr}   % 页眉页脚控制
+\usepackage{geometry}
+\usepackage{subfigure}  % 子图排版
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{listings} % 代码排版宏包
+\usepackage{xcolor} % 代码高亮颜色
+\usepackage{enumitem} % 列表格式控制宏包
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+\pagestyle{fancy}
+\fancyhf{} % 清空默认页眉页脚
+\fancyhead[L]{\small 示波器的使用}       % 左上角页眉
+\fancyhead[R]{\small 2513318}          % 右上角章节名
+\fancyfoot[C]{\thepage}                   % 居中页码（页脚）
+\renewcommand{\headrulewidth}{0.4pt}      % 页眉线粗细
+\renewcommand{\footrulewidth}{0.4pt}      % 页脚线粗细
+%报告开始
+\begin{document}
+	%设置课程标题
+	\begin{center}
+		\heiti\LARGE{《大学基础物理实验》课程实验报告}
+	\end{center}
+	%设置实验人信息以及实验时间表格
+	\begin{center}
+		\begin{tabular}{lcr}
+			{\songti 姓名及学号：陈秋实2513318}  \quad 专业：密码科学与技术 \quad 组别：L组1号 \\
+			{\songti  学院：密码与网络空间安全学院 \quad 实验时间：2026年4月10日~星期五~下午}\\
+		\end{tabular}
+	\end{center}
+	\vspace{-0.2cm}
+	{\noindent}	 \rule[-10pt]{16cm}{0.05em}\\
+	\vspace{-0.4cm}
+	
+	%实验题目
+	\begin{center}
+		\LARGE\textbf{实验题目：示波器的使用}
+	\end{center}
+	
+	%实验原理
+	\section{仪器与用具}
+	\par 1.1仪器品牌与型号：
+	\par 示波器：普源DS1102E，信号发生器：F05函数发生器
+	\par 1.2电阻阻值：1k$\Omega$，电容值：0.1$\mu F$
+	
+	\section{基本使用}
+	\par 将信号源($1KHz,3Vp-p$)和变压器电压同时输出到示波器，分别稳定并显示适当的波形。重点熟悉触发对波形的作用。
+	
+	\section{实验数据}
+	\subsubsection*{信号源和变压器测量}
+	\par 实验图片如下:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.65\textwidth]{1.jpg}
+	\end{figure}
+	
+	\subsubsection*{李萨如图形测量法}
+	\begin{table}[!htbp]
+		\centering 
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\rule{0pt}{20pt}$\frac{\mbox{与水平线的交点数}}{\mbox{与竖直线交点数}}=\frac{n_2}{n_1}$    & 1 & 1/2 & 1/3 & 2 & 2/3  \\ \hline
+			\rule{0pt}{20pt}函数发生器频率 & 50.01 & 99.94 & 149.91 & 24.98&74.97   \\ \hline
+			\rule{0pt}{20pt}算出的市电频率 & 50.01& 49.97 & 49.97 &49.96&49.98 \\ \hline
+		\end{tabular}
+	\end{table}
+	\par 计算得到平均市电频率为49.98Hz
+	
+	\subsection{测量RC电路的相位差}
+	\par 连接电路，将信号发生器频率设定为$f=1.59KHz$
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.65\textwidth]{2.jpg}
+	\end{figure}
+	\subsubsection*{椭圆法}
+	$$
+	|\theta|=\arcsin\frac{2x_0}{2x_m}=\arcsin\frac{2.88}{3.90}\approx0.738
+	$$
+	\subsubsection*{位移法}
+	\[
+	\theta = \frac{l}{l_0}\times 360^o = \frac{224}{312}\approx0.718
+	\]
+	
+	\subsection{思考题}
+	$\tilde{u}_R = \frac{R}{R + R_C} \, u = \frac{R}{R + \frac{1}{j\omega C}} \, u,\ \text{其分压值为 } |\tilde{u}_R| = \frac{R}{\sqrt{R^2 + \left( \frac{1}{\omega C} \right)^2}} \, u$
+	
+	
+\end{document}

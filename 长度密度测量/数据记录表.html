@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>半空心圆柱几何尺寸测量数据记录与处理表</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  startup: { typeset: false }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async>
+</script>
+<style>
+  body { font-family: "Times New Roman", "宋体", SimSun, STSong, serif; padding: 20px; }
+  table { border-collapse: collapse; margin: 0 auto; font-size: 14px; }
+  th, td { border: 1px solid black; padding: 6px 10px; text-align: center; white-space: nowrap; }
+  .stat-label { text-align: left; padding-left: 12px; }
+  .header-info { font-weight: normal; }
+  .blank { min-width: 30px; }
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">表: 半空心圆柱几何尺寸测量数据记录与处理表（游标卡尺）</h2>
+
+<table>
+  <!-- Header Row 1: Info Bar -->
+  <tr>
+    <th colspan="2" class="header-info">单位：(cm)</th>
+    <th colspan="4" class="header-info">零点读数 $x_0 =$</th>
+    <th colspan="4" class="header-info">允差：$\Delta_x =$</th>
+  </tr>
+
+  <!-- Header Row 2: Column Names -->
+  <tr>
+    <th>次数</th>
+    <th>$D_{1i}$</th>
+    <th>$S_{D_{1i}}$</th>
+    <th>$H_{1i}$</th>
+    <th>$S_{H_{1i}}$</th>
+    <th>$D_{2i}$</th>
+    <th>$S_{D_{2i}}$</th>
+    <th>$H_{2i}$</th>
+    <th>$S_{H_{2i}}$</th>
+    <th></th>
+  </tr>
+
+  <!-- Data Rows (4 rows) -->
+  <tr>
+    <td>1</td>
+    <td>2.996</td>
+    <td>$+0.0020$</td>
+    <td>3.000</td>
+    <td>$-0.0005$</td>
+    <td>1.790</td>
+    <td>$-0.0025$</td>
+    <td>2.170</td>
+    <td>$-0.0005$</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>2.992</td>
+    <td>$-0.0020$</td>
+    <td>3.000</td>
+    <td>$-0.0005$</td>
+    <td>1.794</td>
+    <td>$+0.0015$</td>
+    <td>2.170</td>
+    <td>$-0.0005$</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>2.996</td>
+    <td>$+0.0020$</td>
+    <td>3.002</td>
+    <td>$+0.0015$</td>
+    <td>1.794</td>
+    <td>$+0.0015$</td>
+    <td>2.172</td>
+    <td>$+0.0015$</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>2.992</td>
+    <td>$-0.0020$</td>
+    <td>3.000</td>
+    <td>$-0.0005$</td>
+    <td>1.792</td>
+    <td>$-0.0005$</td>
+    <td>2.170</td>
+    <td>$-0.0005$</td>
+    <td></td>
+  </tr>
+
+  <!-- Statistical Row 1 -->
+  <tr>
+    <td class="stat-label">$D_1$ 的算术平均值</td>
+    <td></td>
+    <td>$S_{\overline{D}_1}$</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <!-- Statistical Row 2 -->
+  <tr>
+    <td class="stat-label">标准偏差</td>
+    <td colspan="9"></td>
+  </tr>
+
+  <!-- Statistical Row 3 -->
+  <tr>
+    <td class="stat-label">$D_1$ 的 A 类不确定度</td>
+    <td>$u_{aD_1}$</td>
+    <td></td>
+    <td>$u_{aH_1}$</td>
+    <td></td>
+    <td>$u_{aD_2}$</td>
+    <td></td>
+    <td>$u_{aH_2}$</td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <!-- Statistical Row 4 -->
+  <tr>
+    <td class="stat-label">平均</td>
+    <td colspan="9"></td>
+  </tr>
+
+  <!-- Statistical Row 5 -->
+  <tr>
+    <td class="stat-label">$D_1$ 的不确定度</td>
+    <td>$u_x$</td>
+    <td colspan="8"></td>
+  </tr>
+
+  <!-- Bottom Row -->
+  <tr>
+    <td class="stat-label">自由度</td>
+    <td>$k_x$</td>
+    <td colspan="8"></td>
+  </tr>
+</table>
+
+</body>
+</html>
